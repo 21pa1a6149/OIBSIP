@@ -1,1 +1,131 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            .cal{
+                padding-top: 4%;
+                padding-bottom: 4%;
+                border: 2px solid black;
+                margin-left: 35%;
+                margin-right: 35%;
+                margin-top: 10%;
+                margin-bottom: -10%;
+                background-color: rgb(162, 162, 160);
+                border-radius: 10%;
+            }
+            input{
+                font-size: 30px;
+                size: 40%;
+            }
+            
+            .table{
+                background-color: #373637;
+                margin-left: 9%;
+                margin-right: 10%;
+                border: 2px solid black;
+                border-radius: 10px;
+                
+            }
+            .r1{
+                display: flex;
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+            .r2{
+                display: flex;
+                padding-bottom: 5px;
+            }
+            .r3{
+                display: flex;
+                padding-bottom: 5px;
+            }
+            .r4{
+                display: flex;
+                padding-bottom: 5px;
+            }
+            .r5{
+                display: flex;
+                padding-bottom: 5px;
+            }
+            #display{
+                border: 2px solid black;
+                height: 55px;
+                width: 85%;
+                border-radius: 10px;
+                background-color: rgb(250, 247, 247);padding-bottom: 15px;
+            }
+            .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13,.c14,.c15,.c16,.c17,.c18,.c19,.c20,.c21,.c22,.c23,.c24{
+                display: flex;
+                padding-left: 10px;
+            }
+            input{
+                border-radius: 5px;   
+                height: 50px;
+                width: 60px;
+            }
+            input:hover{
+                background-color: rgb(192, 218, 223);
+            }
+            #appendclr,#appenddel{
+                width: 95px;
+            }
+            #result{
+                width: 130px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <center>
+        <div class="cal">
+            <div class="output" style="padding-bottom: 10px;;">
+                <p id="display"></p>
+            </div>
+            <div class="table">
+                
+                    <div class="r1">
+                        <div class="c1" ><input type="button" id="appendbr1" value=" (  " onclick="br1()" ></div>
+                        <div class="c2" ><input type="button" id="appendbr2" value=" )  " onclick="br2()" ></div>
+                        <div class="c5" ><input type="button" id="appendclr" value="clr" onclick="clr()" ></div>
+                        <div class="c4" ><input type="button" id="appenddel" value="del" onclick="del()" ></div>
+                    </div>
+                    <div class="r2">
+                        <div class="c6" ><input type="button" id="append7" value=" 7 " onclick="a7()" ></div>
+                        <div class="c7" ><input type="button" id="append8" value=" 8 " onclick="a8()" ></div>
+                        <div class="c8" ><input type="button" id="append9" value=" 9 " onclick="a9()" ></div>
+                        <div class="c14" ><input type="button" id="append×" value=" × " onclick="amul()" ></div>
+                        <div class="c3" ><input type="button" id="append×" value=" ^ " onclick="sqr()" ></div>
+                    </div>
+                    <div class="r3">
+                        <div class="c11" ><input type="button" id="append4" value=" 4 " onclick="a4()" ></div>
+                        <div class="c12" ><input type="button" id="append5" value=" 5 " onclick="a5()" ></div>
+                        <div class="c13" ><input type="button" id="append6" value=" 6 " onclick="a6()" ></div>
+                        
+                        <div class="c15" ><input type="button" id="append÷" value=" ÷ " onclick="adiv()" ></div>
+                        <div class="c9" ><input type="button" id="append%" value=" %" onclick="amod()" ></div>
+                    </div>
+                    <div class="r4">
+                        <div class="c16" ><input type="button" id="append1" value=" 1 " onclick="a1()" ></div>
+                        <div class="c17" ><input type="button" id="append2" value=" 2 " onclick="a2()" ></div>
+                        <div class="c18" ><input type="button" id="append3" value=" 3 " onclick="a3()" ></div>
+                        <div class="c19" ><input type="button" id="append+" value=" + " onclick="aadd()" ></div> 
+                        <div class="c20" ><input type="button" id="append-" value=" -  " onclick="asub()" ></div>
+                    </div>
+                    <div class="r5">
+                        <div class="c21" ><input type="button" id="append." value=" .  " onclick="adot()"></div>
+                        <div class="c22" ><input type="button" id="append0" value=" 0 " onclick="a0()" ></div>
+                        <div class="c23" ><input type="button" id="append0" value=" 00 " onclick="apm()" ></div>
+                        
+                        <div class="c24" ><input type="button" id="result" value="enter" onclick="result()" ></div>
+                    </div>
+                    
+                </table>
+            </div>
+        </div>
+        
+    </center>
+    <script src="c.js"></script>
+    </body>
+</html>
